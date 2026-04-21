@@ -5,6 +5,7 @@ import { AiIngestionComponent } from './pages/ai-ingestion.component';
 import { BillingComponent } from './pages/billing.component';
 import { DashboardComponent } from './pages/dashboard.component';
 import { IncidentResponseComponent } from './pages/incident-response.component';
+import { IncidentDetailComponent } from './pages/incident-detail.component';
 import { IncidentsComponent } from './pages/incidents.component';
 import { PlaybookCreatorComponent } from './pages/playbook-creator.component';
 import { PredictionsComponent } from './pages/predictions.component';
@@ -17,6 +18,7 @@ export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'incidents', component: IncidentsComponent },
+  { path: 'incidents/:id', component: IncidentDetailComponent },
   { path: 'incident-response', component: IncidentResponseComponent },
   { path: 'threats', component: ThreatsComponent },
   { path: 'predictions', component: PredictionsComponent },
