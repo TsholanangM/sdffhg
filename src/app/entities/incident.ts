@@ -9,4 +9,8 @@ export interface Incident {
   owner: string;
   status: IncidentStatus;
   createdAt: string;
+export interface Incident {
+  id?: string;
+  name?: string;
+  [key: string]: unknown;
 }

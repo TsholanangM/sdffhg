@@ -49,5 +49,8 @@ import { Component } from '@angular/core';
       </article>
     </section>
   `,
+  selector: 'app-Dashboard',
+  standalone: true,
+  template: '<section><h1>Dashboard</h1><p>Dashboard page works.</p></section>',
 })
 export class DashboardComponent {}
